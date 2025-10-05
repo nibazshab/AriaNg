@@ -20,6 +20,8 @@ jobs:
           wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip -O a.zip
           unzip a.zip
 
+      - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: 'AriaNg-DailyBuild-master'
